@@ -46,3 +46,30 @@ function setReplace(frase, nome novo_nome){ //função que retorna a frase escri
 alert (soma (5, 10));
 alert (setReplace ("Vai Japão", "Japão", "Brasil"));
 
+function clicou () {
+	document.getElementById("agradecimento").innerHTML = "<b>Obrigada por clicar</b>"; /*quando o botão é pressionado, exibe
+					a frase na página em negrito.*/
+	//console.log(documentElementById("agradecimento")); - seleciona todo o campo do botão.
+	//alert (Obrigada por clicar); - exibe a frase em um pop-up.
+}
+
+function redirecionar() {
+	//window.open("https://globallabs.academy/"); - abre uma nova guia para exibir a página que foi redirecionado.
+	window.location.href = "https://globallabs.academy/"; //abre a página redirecionada na mesma guia.
+}
+
+function trocar(elemento){ //ao passar o mouse em cima da frase "Passe o Mouse Aqui", ela mudará para a frase da função.
+	elemento.innerHTML = "Obrigada por passar o mouse";
+}
+
+function voltar(elemento){ //ao tirar o mouse de cima da frase "Obrigada por passar o mouse", ela volta ao seu estado original.
+	elemento.innerHTML = "Passe o Mouse Aqui";
+}
+
+function load(){ //exibe um pop-up informando que a página foi carregada.
+	alert ("Página Carregada");
+}
+
+function change(elemento){ //exibe no console a opção escolhida na seleção.
+	console.log(elemento.value);
+}
